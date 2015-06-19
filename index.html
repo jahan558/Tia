@@ -1,0 +1,770 @@
+<!--
+Author: Shahnaz Jahan
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile: CodersTrust</title>
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+	<!-- start-smooth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/hover-min.css" />
+		<script src="js/viewportchecker.js"></script>
+		
+		<script>
+		 new WOW().init();
+		</script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smooth-scrolling -->
+
+</head>
+<body>
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="container"> 
+		<div class="top-header row">
+			<script src="js/classie.js"></script>
+			<!--top-nav---->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<div class="nav-icon">
+					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+				</div>
+				<div class="box" id="box">
+					<div class="box_content">        					                         
+						<div class="box_content_center">
+							<div class="form_content">
+								<div class="menu_box_list">
+									<ul>
+										<li><a class="scroll" href="#home"><span>home</span></a></li>
+										<li><a class="scroll" href="#about"><span>about</span></a></li>
+										<li><a class="scroll" href="#services"><span>services</span></a></li>
+										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
+										<li><a class="scroll" href="#testimonial"><span>Testimonial</span></a></li>
+										<li><a class="scroll" href="#blog"><span>blog</span></a></li>
+										<li><a class="scroll" href="#contact"><span>Contact</span></a></li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+								<a class="boxclose" id="boxclose"> <span> </span></a>
+							</div>                                  
+						</div> 	
+					</div> 
+				</div>       	  
+			</div>
+			<!---start-click-drop-down-menu----->
+			
+			
+			        <!----start-dropdown--->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					
+			<!---//End-click-drop-down-menu----->
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="banner-left wow bounce" data-wow-duration="1s">
+				<img src="images/1.png" alt=""/>
+			</div>
+			<div class="banner-right wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="0.5s">
+				<h1 style="text-shadow: 0 8px 4px rgba(0,0,0,.3);">Shahnaz Jahan</h1>
+				<div class="border"></div>
+				<h2 style="text-shadow: 0 8px 4px rgba(0,0,0,.3);">UX-UI Developer</h2>
+				<a class="hvr-float" href="#about">See More!</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+</div>
+<!--/header-banner-->
+<div class="about-t"></div>
+<!--about-->
+<div class="about text-center post" id="about">
+	<div class="container">
+		<h3 class="post wow fadeInRight" data-wow-duration="0.8s">ABOUT ME</h3>
+		<div class="strip text-center post"><img src="images/about.png" alt=" "/></div>
+		<div class="hvr-float wow fadeInLeft" data-wow-duration="1s"><p>I am a hard-working and creative artist with the technical expertise necessary for a career in web development, art direction, and new media. I have experience in both digital and print and have led marketing campaigns for festivals, small companies, non-profits, and even political campaigns! 
+
+I greatly enjoy finding creative yet elegant solutions to technical marketing demands. The development of high-concept abstract designs in both new and old media is my absolute professional strength. I deliver clear messaging with strong imagery that resonates both with company and consumer alike. 
+
+I am technically skilled in all fundamental computing languages necessary for designing, creating, developing, and maintaining an updated and streamlined presence in an ever changing digital marketplace.</p></div>
+		
+	
+		<ul>
+			<li><a class="fb" href="#"></a></li>
+			<li><a class="twit" href="#"></a></li>
+			<li><a class="in" href="#"></a></li>
+			<li><a class="drib" href="#"></a></li>
+			<li><a class="goog" href="#"></a></li>
+			<li><a class="pin" href="#"></a></li>
+		</ul>
+	</div>
+</div>
+<!--//about-->
+<div class="about-back"></div>
+<!--my skill-->
+<div class="my-skills text-center post">
+	<div class="container">
+		<h3 class="wow rotateInDownLeft" data-wow-duration="2s">MY SKILLS</h3>
+		<div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
+		<div class="skill-grids wow rotateInDownRight">
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-1"></div>
+						<p>HTML5</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-2"></div>
+						<p>Js</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-3"></div>
+						<p>jQuery</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-4"></div>
+						<p>CSS 3</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-5"></div>
+						<p>Photoshop</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center hvr-pulse">
+						<div class="circle" id="circles-6"></div>
+						<p>Illustrator</p>
+					</div>
+					<div class="clearfix"> </div>
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#86b211', '#ffffff'], ['#86b211', '#ffffff'], ['#86b211', '#ffffff'], ['#86b211', '#ffffff'], ['#86b211', '#ffffff'], ['#86b211', '#ffffff']
+									];
+								for (var i = 1; i <= 7; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 30 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+		</div>
+	</div>	
+</div>
+<!--//my skill-->
+<div class="my-skill-back"></div>
+<!--education-->
+<div class="education text-center">
+	<div class="container">
+		<div class="edu-info">
+			<h3 class="wow zoomIn" data-wow-duration="0.5s">EDUCATION</h3>
+		</div>
+		<div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
+		<div class="edu-grids">
+			<div class="col-md-4 edu-grid hvr-float-shadow wow zoomIn">
+				<p>2005 - 2006</p><span>Graduated</span>
+				
+				<div class="edu-border">
+					<div class="edu-grid-master">
+						<h3>SECONDARY SCHOOL EXAMINATION CERTIFICATE</h3>
+						<h4>CA HIGH SCHOOL</h4>
+					</div>
+					<div class="edu-grid-info">
+						<h5>Passed SSC with a 5.00 grading point from Science Faculty. My major subject was biology and optional was higher math.</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 edu-grid hvr-float-shadow wow zoomIn" data-wow-delay="0.5s">
+				<p>2007 - 2008</p><span>Graduated</span>
+				<div class="edu-border">
+					<div class="edu-grid-master">
+						<h3>HIGHER SECONDARY SCHOOL EXAMINATION CERTIFICATE</h3>
+						<h4>B.A.F Shaheen COllege</h4>
+					</div>
+					<div class="edu-grid-info">
+						<h5>Passed HSC with a 5.00 grading point from Science Faculty. My major subject was biology and optional was higher math.</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 edu-grid hvr-float-shadow wow zoomIn" data-wow-delay="0.8s">
+				<p>2012 - 2013</p><span>Graduated</span>
+				<div class="edu-border">
+					<div class="edu-grid-master">
+						<h3>BACHELR DEGREE OF COMPUTER SCIENCE</h3>
+						<h4>NUB University</h4>
+					</div>
+					<div class="edu-grid-info">
+						<h5>Completed graduation with 3.90 grading point out of 4 scale.From Science Faculty. My major subject was DS.</h5>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+</div>
+<!--//education-->
+<div class="strip-border"><p></p></div>
+<!--work-->
+<div class="work-experience text-center">
+	
+	<div class="container">
+		<div class="work-info">
+			<h3 class="wow zoomIn" data-wow-duration="0.5s">WORK EXPERIENCE</h3>
+		</div>
+		<div class="strip text-center"><img src="images/work.png" alt=" "/></div>
+		<div class="work-grids">
+			<div class="col-md-4 w-grid hvr-grow-shadow wow zoomIn">
+				<div class="work-grid">
+					<h3>2013 - Now</h3>
+					<div class="work-grid-info">
+						<h4>Upwork</h4>
+						<h5>Visual Designer</h5>
+						<p>Inbetween web designing, developing, Shahnaz Jahan found the time to create this eye-catching portfolio site. A gorgeous example of a one-page site, simply scroll down past the beautifully illustrated landing.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 w-grid hvr-grow-shadow wow zoomIn" data-wow-delay="0.5s">
+				<div class="work-grid">
+					<h3>2014 - Now</h3>
+					<div class="work-grid-info">
+						<h4>Elance</h4>
+						<h5>Web Designer</h5>
+						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
+						This gun is advertised as the most popular gun in American crime. 
+						Do you believe that shit? It actually says that in the little book 
+						that comes with it: the most popular gun in</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 w-grid hvr-grow-shadow wow zoomIn" data-wow-delay="0.8s">
+				<div class="work-grid">
+					<h3>2014 - Now</h3>
+					<div class="work-grid-info">
+						<h4>Coders Trust</h4>
+						<h5>Web Developer</h5>
+						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
+						This gun is advertised as the most popular gun in American crime. 
+						Do you believe that shit? It actually says that in the little book 
+						that comes with it: the most popular gun in</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//work-->
+<div class="services-back"></div>
+
+<!--services-->
+<div class="services text-center" id="services">
+	<div class="container">
+		<div class="ser-info">
+			<h3 class="wow zoomIn" data-wow-duration="2s">SERVICES</h3>
+		</div>
+		<div class="strip text-center"><img src="images/ser.png" alt=" "/></div>
+		<div class="ser-grids">
+			<div class="col-md-3 ser-grid hvr-wobble-bottom wow rotateInDownLeft" data-wow-delay="1s">
+				<div class="ser-imagea"></div>
+				<h3>Web Design</h3>
+				<p>It is nothing but a passion that
+				makes me mad about web design
+				and I am offering the best service you need.</p>
+			</div>
+			<div class="col-md-3 ser-grid hvr-wobble-bottom wow rotateInDownLeft" data-wow-delay="1.3s">
+				<div class="ser-imageb"></div>
+				<h3>Graphic Design</h3>
+				<p>It is nothing but a passion that
+				makes me mad about web design
+				and I am offering the best service you need.</p>
+			</div>
+			<div class="col-md-3 ser-grid hvr-wobble-bottom wow rotateInDownRight" data-wow-delay="1.5s">
+				<div class="ser-imagec"></div>
+				<h3>Content Writer</h3>
+				<p>It is nothing but a passion that
+				makes me mad about web design
+				and I am offering the best service you need.</p>
+			</div>
+			<div class="col-md-3 ser-grid hvr-wobble-bottom wow rotateInDownRight" data-wow-delay="1.7s">
+				<div class="ser-imaged"></div>
+				<h3>Development</h3>
+				<p>It is nothing but a passion that
+				makes me mad about web design
+				and I am offering the best service you need.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//services-->
+<!--portfolio-->
+<div class="gallery-section text-center" id="portfolio">
+	<div class="container">
+		<h3 class="wow bounceInLeft">PORTFOLIO</h3>
+		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
+		<p class="wow bounceInRight">I greatly enjoy finding creative yet elegant solutions to technical marketing demands. The development of high-concept abstract designs in both new and old media is my absolute professional strength. I deliver clear messaging with strong imagery that resonates both with company and consumer alike. 
+
+I am technically skilled in all fundamental computing languages necessary for designing, creating, developing, and maintaining an updated and streamlined presence in an ever changing digital marketplace.</p>
+		<div class="gallery-grids">
+			<div class="top-gallery wow slideInUp" data-wow-duration="1.2s">
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="http://shahnazjahan.tk" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>GREEN WEBSITE</h4>
+							<p>WEB DESIGN</p>
+							<div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/Green">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>BLUE WEBSITE</h4>
+							<p>WEB DESIGN</p>
+							<div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/Blue">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>PINK WEBSITE</h4>
+							<p>WEB DESIGN</p>
+							<div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/Pink">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>WORD WAR II</h4>
+							<p>WEB DESIGN</p>
+							<div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/World_War_II/">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>NEW LINKFIRE</h4>
+							<p>DO FIRE</p>
+							<div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/new-linkfire/">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>MEDIA</h4>
+							<p>RESPONSIVE DESIGN</p>
+							<div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
+							<div class="button"><a href="http://jahan558.github.io/media/">Live Preview</a></div>
+						</div>
+				</div></a>
+				<div class="clearfix"> </div>
+			</div>
+				<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+		</div>
+	</div>
+</div>
+<!--//portfolio-->
+<!--process-->
+<div class="process text-center">
+	<div class="container">
+		<h3 class="wow rotateInDownLeft" data-wow-duration="2s">PROCESS</h3>
+		<div class="strip text-center"><img src="images/pro.png" alt=" "/></div>
+		<div class="process-girds wow rotateInDownRight">
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imagea"></div>
+					<p>IDEA</p>
+					<img src="images/6.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imageb"></div>
+					<p>CONCEPT</p>
+					<img class="pro-imga" src="images/6.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imagec"></div>
+					<p>DESIGN</p>
+					<img class="pro-img" src="images/6.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imaged"></div>
+					<p>DEVELOP</p>
+					<img class="pro-imgb" src="images/6.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imagee"></div>
+					<p>TEST</p>
+					<img src="images/6.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-2 process-pad">
+				<div class="process-gird hvr-rotate">
+					<div class="process-imagef"></div>
+					<p>LAUNCH</p>
+					
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//process-->
+<div class="process-back"></div>
+<!--testimonials-->
+<div class="testimonials" id="testimonial">
+	<div class="container">
+		<h3 class="wow bounceInLeft">TESTIMONIAL</h3>
+		<div class="strip text-center"><img src="images/test.png" alt=" "/></div>
+			<!-- responsiveslides -->
+					<script src="js/responsiveslides.min.js"></script>
+						<script>
+							
+							$(function () {
+							 // Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: false,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+						</script>
+			<!-- responsiveslides -->
+			<div  id="top" class="callbacks_container wow slideInUp" data-wow-duration="1.4s">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="test-banner">
+								<img class="quoa" src="images/quo2.png" alt=""/>
+								<div class="test-left">
+									<img src="images/7.png" alt=""/>
+								</div>
+								<div class="test-right">
+									<p>Awesome website. We're on the same curve, just on opposite ends.</p>
+									<h4>Sam L. J. - Pulp Fiction</h4>
+								</div>
+								<div class="clearfix"></div>
+								<img class="quo" src="images/quo1.png" alt=""/>
+							</div>
+						</li>
+						<li>
+							<div class="test-banner">
+								<img class="quoa" src="images/quo2.png" alt=""/>
+								<div class="test-left">
+									<img src="images/eee.png" alt=""/>
+								</div>
+								<div class="test-right">
+									<p>Fabulous work, we are connected, 
+									you and I. We're on the same curve</p>
+									<h4>Sam L. J. - Pulp Fiction</h4>
+								</div>
+								<div class="clearfix"></div>
+								<img class="quo" src="images/quo1.png" alt=""/>
+							</div>
+						</li>
+					</ul>
+			</div>
+			
+	</div>
+</div>
+<!--testimonials-->
+<!--clients-->
+<div class="clients text-center">
+	<div class="container">
+		<h3 class="wow slideInUp" data-wow-duration="1.3s">Clients</h3>
+		<div class="strip-line"></div>
+		<div class="client-grids wow slideInUp" data-wow-duration="1s">
+			<div class="col-md-4 cl-grid hvr-push">
+				<div class="client-grid">
+					<img src="images/10.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-4 cl-grid hvr-push">
+				<div class="client-grid">
+					<img src="images/11.png" alt=""/>
+				</div>
+			</div>
+			<div class="col-md-4 cl-grid hvr-push">
+				<div class="client-grid">
+					<img src="images/12.png" alt=""/>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--clients-->
+<div class="client-back"></div>
+<!--blog-->
+<div class="blog" id="blog">
+	<div class="container">
+		<div class="blog-info text-center">
+			<h3 class="wow fadeInUp" data-wow-duration="1.7s">BLOG</h3>
+			<div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
+		</div>
+		<div class="blog-grids wow fadeInUp" data-wow-duration="1.1s">
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/a.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/best-ways-to-grow-your-newsletter-subscribers/">Best Ways to Grow Your Newsletter Subscribers</a>
+						<div class="stripa"></div>
+						<p>Numerous organizations that depend on online deals have found that concentrating on particular marketing...</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>	
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/b.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/invoice-clients-using-wordpress-plugins/">Invoice Your Clients Using WordPress Plugins</a>
+						<div class="stripa"></div>
+						<p>If you are earning your living using WordPress as a Content Management System, then...</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/c.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/version-control-improve-wordpress-workflow/">Version Control to Improve Your WordPress Workflow</a>
+						<div class="stripa"></div>
+						<p>Before Version Control When people start their career with the development of WordPress, their workflow</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/a.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/quick-intro-git-wordpressers/">Quick Intro to Git for WordPressers </a>
+						<div class="stripa"></div>
+						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
+						and viruses differently than mine. You don't get sick, I do.</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/b.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/top-5-wordpress-plugins-promote-website/">Top 5 WordPress Plugins to Promote Your Website</a>
+						<div class="stripa"></div>
+						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
+						and viruses differently than mine. You don't get sick, I do.</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 blog-text-info">
+				<div class="blog-grid">
+					<a href="single.html"><img src="images/c.jpg" alt=""/></a>
+					<div class="blog-text">
+						<a href="http://devrix.com/tutorial/7-social-media-success-tactics-you-can-learn-from-kids/">7 Social Media Success Tactics You Can Learn From Kids</a>
+						<div class="stripa"></div>
+						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
+						and viruses differently than mine. You don't get sick, I do.</p>
+					</div>
+				
+					<div class="blog-para">
+							<ul>
+								<li><a href="#">3 Comments</a></li>
+								<li><a href="#">8 Share</a></li>
+							</ul>
+					</div>
+					<div class="blog-pos">
+						<p>5<span>May</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//blog-->
+<div class="contact-back"></div>
+<!--contact-->
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="contact-info text-center">
+			<h3 class="wow rotateIn" data-wow-duration="1.3s"">CONTACT</h3>
+			<div class="strip text-center"><img src="images/con1.png" alt=" "/></div>
+		</div>
+		<div class="contact-grids">
+			<div class="col-md-5 contact-left wow rotateInDownLeft" data-wow-duration="1s"">
+				<h3>Contact Me to Design Your Website</h3>
+				<div class="stripb"></div>
+				<ul>
+					<li>Farmget, Tejgaon</li>
+					<li>Bangladesh</li>
+					<li></li>
+					<li><a href="">ccolor558@@gmail.com</a></li>
+					<li><a href="#">Happy You!</a></li>
+				</ul>
+			</div>
+			<div class="col-md-7 contact-right wow rotateInDownRight" data-wow-duration="1.3s">
+				<h3>Drop Me A Line</h3>
+				<div class="stripb"></div>
+				<form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+					<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+					<input type="submit" value="SEND">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//contact-->
+<div class="footer-top"></div>
+
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<p>Copyright &copy; 2015 <a href="https://www.facebook.com/shahnaz.jahan.12"> Shahnaz Jahan</a></p>
+	</div>
+</div>
+<!--//footer-->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- //here ends scrolling-->
+</body>
+</html>
